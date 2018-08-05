@@ -1,0 +1,80 @@
+<head>
+
+    <title>Quotes & Sayings</title>
+
+    <link rel="stylesheet" href="css.css">
+    <link href='https://fonts.googleapis.com/css?family=Cedarville Cursive' rel='stylesheet'>
+
+</head>
+<body>
+  <script>
+     function my() {
+      var quotes = [
+         "\"Be who you are and say what you feel, because those who mind don't matter and those who matter don't mind.\" -Dr. Seuss",
+        
+       
+         "\"Son, if you really want something in this life, you have to work for it. Now quiet! They're about to announce the lottery numbers.\" - Homer Simpsons" ,
+        
+      
+         "\"Some people just have a way with words, and other people … oh … not have way.\" - Steve Martin" ,
+        
+     
+          "\"The four most beautiful words in our common language: I told you so.\" - Gore Vidal" ,
+       
+         "\"The difference between stupidity and genius is that genius has its limits.\" - Albert Einstein",
+     "\"A good speech should be like a woman's skirt: long enough to cover the subject and short enough to create interest.\" - Winston Churchill" ,
+        
+     "\"There is a place you can touch a woman that will drive her crazy. Her heart.\" - Melanie Griffith " ,
+        
+     
+           "\"I went to my doctor and asked for something for persistent wind. He gave me a kite.\" - Les Dawson",
+        
+        "\"There are only two conditions where you’re allowed to wake up a woman on a lie-in: it’s snowing or the death of a celebrity.\"- Michael McIntyre",
+        "\"About a month before he died, my grandfather covered his back full of lard. After that he went downhill very quickly.\" - Milton Jones" ,
+      
+         "\"As I have gotten older and wiser I discovered that there are six things that I really loved about my job. Pay day, lunch time, quitting time, vacation time, holidays, and of course retirement.\" - Tom Goins" ,
+        
+    
+          "\"Don't cry because it's over. Smile because it happened.\" -Dr. Seuss",
+        
+          "\"I like nonsense, it wakes up the brain cells.\" -Dr. Seuss",
+         "\"Today you are you! That is truer than true! There is no one alive who is you-er than you!\"  -Dr. Seuss ",
+        
+         "\"Go out on a Tuesday? Who am I, Charlie Sheen?\" -Marge Simpson",
+        
+    "\"If our Founding Fathers wanted us to care about the rest of the world, they wouldn’t have declared their independence from it.\" —Stephen Colbert",
+        
+        
+   "\"I don’t believe in reincarnation, and I didn’t believe in it when I was a hamster.\" —Shane Richie, British actor",
+        
+      ];
+      var quote = quotes[Math.floor(Math.random() * quotes.length)];
+      document.getElementById("demo").innerHTML = quote; 
+       
+    };
+function tweet() {
+  document.getElementById("tweet").href="https://twitter.com/intent/tweet/?text=" + document.getElementById("demo").innerHTML;
+}
+  </script>
+
+<div class = "typewriter">
+    <h1>Quotes...Quotes... Quotes...</h1>
+            
+</div>
+    <div class = "read">
+      <p id="demo">"Tough times don't last, tough people do."</p>
+</div>
+
+       <div id = "container"> <button class="quote" type="button"  onClick="my()"> New Quotes </button> </div>
+  
+<a class="twitter-share-button" id="tweet" href="" data-size="large" target="_blank" onclick="tweet()">
+  <button type="button" class="btn btn-primary">Tweet this!</button></a>
+  <p></p>
+</div>
+</div>
+        
+
+</body>
+
+
+</html>
